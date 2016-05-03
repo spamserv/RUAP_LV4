@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="1" result="Failed" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="5" engine-version="3.2.1.0" clr-version="4.0.30319.42000" start-time="2016-05-03 08:24:01Z" end-time="2016-05-03 08:24:19Z" duration="18.817229">
+  <command-line><![CDATA["C:\Users\Student\RUAP-LV4\RUAP_LV4\packages\NUnit.ConsoleRunner.3.2.1\tools\nunit3-console.exe"  C:\Users\Student\RUAP-LV4\RUAP_LV4\RUAP_LV4.sln]]></command-line>
+  <test-suite type="Project" id="2" name="RUAP_LV4.sln" fullname="C:\Users\Student\RUAP-LV4\RUAP_LV4\RUAP_LV4.sln" testcasecount="1" result="Failed" site="Child" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="5">
+    <test-suite type="Assembly" id="1-1002" name="RUAP_LV4.dll" fullname="C:\Users\Student\RUAP-LV4\RUAP_LV4\RUAP_LV4\bin\Debug\RUAP_LV4.dll" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2016-05-03 08:24:01Z" end-time="2016-05-03 08:24:19Z" duration="18.743658" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="5">
+      <environment framework-version="3.2.1.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Users\Student\RUAP-LV4\RUAP_LV4" machine-name="K301-17" user="Student" user-domain="K301-17" culture="hr-HR" uiculture="en-US" os-architecture="x64" />
+      <settings>
+        <setting name="WorkDirectory" value="C:\Users\Student\RUAP-LV4\RUAP_LV4" />
+        <setting name="ImageRuntimeVersion" value="4.0.30319" />
+        <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.5" />
+        <setting name="ImageRequiresX86" value="False" />
+        <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+        <setting name="NumberOfTestWorkers" value="2" />
+      </settings>
+      <properties>
+        <property name="_PID" value="5264" />
+        <property name="_APPDOMAIN" value="test-domain-RUAP_LV4.sln" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1-1003" name="SeleniumTests" fullname="SeleniumTests" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2016-05-03 08:24:01Z" end-time="2016-05-03 08:24:19Z" duration="18.727604" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="5">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="1-1000" name="Test" fullname="SeleniumTests.Test" classname="SeleniumTests.Test" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2016-05-03 08:24:01Z" end-time="2016-05-03 08:24:19Z" duration="18.723960" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="5">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1-1001" name="TheTest" fullname="SeleniumTests.Test.TheTest" methodname="TheTest" classname="SeleniumTests.Test" runstate="Runnable" seed="798259755" result="Failed" start-time="2016-05-03 08:24:01Z" end-time="2016-05-03 08:24:19Z" duration="18.702724" asserts="5">
+            <failure>
+              <message><![CDATA[  Expected string length 10 but was 30. Strings differ at index 0.
+  Expected: "My Account"
+  But was:  "Your Account Has Been Created!"
+  -----------^
+]]></message>
+              <stack-trace><![CDATA[at SeleniumTests.Test.TheTest() in c:\Users\Student\RUAP-LV4\RUAP_LV4\RUAP_LV4\UnitTest1.cs:line 79
+]]></stack-trace>
+            </failure>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
