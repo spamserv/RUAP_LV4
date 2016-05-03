@@ -77,7 +77,27 @@ namespace SeleniumTests
             Assert.AreEqual("Your Account Has Been Created!", driver.Title);
             driver.FindElement(By.LinkText("Continue")).Click();
             Assert.AreEqual("My Account", driver.Title);
+            driver.FindElement(By.CssSelector("span.caret")).Click();
+            driver.FindElement(By.LinkText("Logout")).Click();
         }
+
+        [Test]
+        public void The2Test()
+        {
+            driver.Navigate().GoToUrl(baseURL + "/index.php?route=account/logout");
+            driver.FindElement(By.LinkText("My Account")).Click();
+            driver.FindElement(By.LinkText("Login")).Click();
+            driver.FindElement(By.Id("input-email")).Clear();
+            driver.FindElement(By.Id("input-email")).SendKeys("31000");
+            driver.FindElement(By.Id("input-password")).Clear();
+            driver.FindElement(By.Id("input-password")).SendKeys("pass12345");
+            driver.FindElement(By.Id("input-email")).Clear();
+            driver.FindElement(By.Id("input-email")).SendKeys("jvojak@etfos.hr");
+            driver.FindElement(By.Id("input-password")).Clear();
+            driver.FindElement(By.Id("input-password")).SendKeys("password1234");
+            driver.FindElement(By.CssSelector("input.btn.btn-primary")).Click();
+        }
+
         private bool IsElementPresent(By by)
         {
             try
